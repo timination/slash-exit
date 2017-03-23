@@ -53,7 +53,7 @@ LRESULT CALLBACK MyLowLevelHook(int nCode, WPARAM wParam, LPARAM lParam)
 
 int main()
 {
-	//FreeConsole();
+	FreeConsole();
 
 	MSG msg;
 	hHook = SetWindowsHookEx(WH_KEYBOARD_LL, MyLowLevelHook, NULL, NULL);
